@@ -64,7 +64,8 @@ p {
 /****************** NAVIGATION ******************/
 /************************************************/
 nav {
-    background: #e5e5e5;
+    background: #1a4734;
+    // background: #418b24;
     color: #1d1f20;
     left: 0;
     position: relative;
@@ -144,7 +145,7 @@ nav input[type=checkbox]:checked + label #menu-icon:after {
 /*** MENU ***/
 /* Overlay */
 nav input:checked ~ #overlay {
-    background: #e5e5e5;
+    background: #1a4734;
     bottom: 0;
     left: 0;
     height: 100vh;
@@ -178,7 +179,7 @@ nav ul > li {
 }
 
 nav ul a {
-    color: #1d1f20!important;
+    color: white!important;
     text-decoration: none;
 }
 

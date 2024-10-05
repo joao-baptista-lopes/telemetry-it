@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { ServicosComponent } from './components/servicos/servicos.component';
 import { SubscribeComponent } from './components/subscribe/subscribe.component';
+import { SolucoesComponent } from './components/solucoes/solucoes.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { SubscribeComponent } from './components/subscribe/subscribe.component';
     FooterComponent,
     BannerComponent,
     ServicosComponent,
-    SubscribeComponent
+    SubscribeComponent,
+    SolucoesComponent
   ]
 })
 export class MainModule { }

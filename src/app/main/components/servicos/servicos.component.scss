@@ -1,3 +1,42 @@
+.linha-horizontal {
+  border-top: 5px solid var(--azul-claro);
+  width: 50px;
+  display: inline-block;
+  margin-right: 10px;
+  opacity: 1;
+}
+span {
+  color: #3f6033;
+}
+.titulo-noticias {
+  display: inline-block;
+  color: orange;
+ font-family: "Montserrat";
+  margin-top: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+  
+  h3 {
+    color: black;
+    font-family: "Montserrat";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+  }
+
+  .texto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center!important;
+    margin-bottom: 97px;
+  }
+
+
 .cards-list {
     z-index: 0;
     width: 100%;

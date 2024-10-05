@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
+
 
 @Component({
   selector: 'app-servicos',
@@ -7,6 +9,8 @@ import { Component } from '@angular/core';
   templateUrl: './servicos.component.html',
   styleUrl: './servicos.component.scss'
 })
-export class ServicosComponent {
-
+export class ServicosComponent implements OnInit{
+  ngOnInit() {
+    AOS.init();
+  }
 }
