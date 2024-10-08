@@ -1,14 +1,21 @@
 import { Routes } from '@angular/router';
-import { ManutencaoComponent } from './components/manutencao/manutencao.component';
-
 export const routes: Routes = [
-    // {
-    //     path: '',
-    //     loadChildren: () => import('./main/main.module').then(m => m.MainModule)
-    //   },
+    {
+        path: '',
+        loadChildren: () => import('./main/main.module').then(m => m.MainModule)
+      },
 
       {
-        path:'',
-        component: ManutencaoComponent
+        path:'contactos',
+        loadChildren: () => import('./modules/contacto/contacto.module').then(m => m.ContactoModule)
+      },
+      {
+        path:'servicos',
+        loadChildren: () => import('./modules/servicos/servicos.module').then(m => m.ServicosModule)
       }
+
+    //   {
+    //     path:'',
+    //     component: ManutencaoComponent
+    //   }
 ];

@@ -24,6 +24,8 @@ import { SolucoesComponent } from './components/solucoes/solucoes.component';
     ServicosComponent,
     SubscribeComponent,
     SolucoesComponent
-  ]
+  ],
+  exports:[HeaderComponent,
+    FooterComponent]
 })
 export class MainModule { }

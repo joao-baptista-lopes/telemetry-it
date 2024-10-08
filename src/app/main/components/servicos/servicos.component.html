@@ -1,30 +1,13 @@
-
+<!-- 
 <div class="texto"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
     <h5  >
         <div class="d-flex align-items-center">
           <hr class="linha-horizontal">
-          <!-- <p class="titulo-noticias">Serviços</p> -->
         </div>
     </h5>
     <h3 >Conheça os principais <span>Serviços</span> que prestamos para si</h3>
 </div>
 <div class="cards-list" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
-  
-    <!-- <div class="card 1">
-      <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
-      <div class="card_title title-white">
-        <p>Card Title</p>
-      </div>
-    </div> -->
-    
-    <!-- <div class="card 3">
-      <div class="card_image">
-        <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
-      </div>
-      <div class="card_title">
-        <p>Card Title</p>
-      </div>
-    </div> -->
     <div class="card 3">
       <div class="card_image">
         <img src="fundo.jpeg" />
@@ -60,4 +43,124 @@
       </div>
     </div>
     
-    </div>
+    </div> -->
+
+    <!-- <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="fundo.jpeg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div> -->
+
+    <!-- <div class="container py-5"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
+      @for (card of cards; track cards) {
+
+
+        <div class="card" style="border: 1px solid #333336;">
+          <img class="card-img-top" src="fundo.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{ card.title }}</h5>
+            <p class="card-text">{{ card.text }}</p>
+            <a href="#" routerLink="servicos" class="btn" >Saber Mais</a>
+          </div>
+        </div>
+      } -->
+      <section class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center mb-5">
+                    <h1 class="display-4 font-weight-bolder">Nossos Serviços</h1>
+                    <p class="lead">Conheça as soluções que oferecemos em diversas áreas de atuação.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card text-dark card-has-bg click-col" style="background-image:url('https://source.unsplash.com/600x900/?agriculture');">
+                        <img class="card-img d-none" src="https://source.unsplash.com/600x900/?agriculture" alt="Agrometeorologia e Biodiversidade">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <div class="card-body">
+                                <small class="card-meta mb-2">Soluções Ambientais</small>
+                                <h4 class="card-title mt-0 "><a class="text-dark" href="#">Agrometeorologia e Biodiversidade</a></h4>
+                            </div>
+                            <div class="card-footer">
+                                Oferecemos monitoramento climático e análise ambiental para promover sustentabilidade em áreas agrícolas.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4" routerLink="servicos">
+                    <div class="card text-dark card-has-bg click-col" style="background-image:url('https://source.unsplash.com/600x900/?geotechnical');">
+                        <img class="card-img d-none" src="https://source.unsplash.com/600x900/?geotechnical" alt="Geotecnia">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <div class="card-body">
+                                <small class="card-meta mb-2">Engenharia Geotécnica</small>
+                                <h4 class="card-title mt-0 "><a class="text-dark" >Geotecnia</a></h4>
+                            </div>
+                            <div class="card-footer">
+                                Serviços de análise de solos e fundações para garantir a segurança estrutural em grandes projetos.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card text-dark card-has-bg click-col" style="background-image:url('https://source.unsplash.com/600x900/?technology');">
+                        <img class="card-img d-none" src="https://source.unsplash.com/600x900/?technology" alt="IT Solutions">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <div class="card-body">
+                                <small class="card-meta mb-2">Soluções de TI</small>
+                                <h4 class="card-title mt-0 "><a class="text-dark" href="#">IT Solutions</a></h4>
+                            </div>
+                            <div class="card-footer">
+                                Soluções inovadoras de TI para otimizar processos e promover a transformação digital.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card text-dark card-has-bg click-col" style="background-image:url('https://source.unsplash.com/600x900/?aviation');">
+                        <img class="card-img d-none" src="https://source.unsplash.com/600x900/?aviation" alt="Meteorologia Aeronáutica e Naval">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <div class="card-body">
+                                <small class="card-meta mb-2">Meteorologia</small>
+                                <h4 class="card-title mt-0 "><a class="text-dark" href="#">Meteorologia Aeronáutica e Naval</a></h4>
+                            </div>
+                            <div class="card-footer">
+                                Monitoramento e previsão de clima para operações aeronáuticas e navais, aumentando a segurança.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card text-dark card-has-bg click-col" style="background-image:url('https://source.unsplash.com/600x900/?solar');">
+                        <img class="card-img d-none" src="https://source.unsplash.com/600x900/?solar" alt="Monitorização Solar">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <div class="card-body">
+                                <small class="card-meta mb-2">Energia Renovável</small>
+                                <h4 class="card-title mt-0 "><a class="text-dark" href="#">Monitorização Solar</a></h4>
+                            </div>
+                            <div class="card-footer">
+                                Soluções para análise de eficiência em instalações solares, promovendo o uso de energia renovável.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card text-dark card-has-bg click-col" style="background-image:url('https://source.unsplash.com/600x900/?earthquake');">
+                        <img class="card-img d-none" src="https://source.unsplash.com/600x900/?earthquake" alt="Sismologia">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <div class="card-body">
+                                <small class="card-meta mb-2">Monitoramento Sísmico</small>
+                                <h4 class="card-title mt-0 "><a class="text-dark" href="#">Sismologia</a></h4>
+                            </div>
+                            <div class="card-footer">
+                                Monitoramento de atividades sísmicas para a prevenção de desastres e planejamento urbano seguro.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    

@@ -1,0 +1,233 @@
+// .banner{
+//     padding-bottom: 45px;
+//     padding-top: 70px;
+//     min-height: 350px;
+//     .texto{
+//         height: 100%;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//     }
+// }
+
+$navbar-height: 100px;
+$primary: #436BD7;
+
+html,
+body {
+  font: 16px "Open Sans", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section {
+  height: 50vh;
+}
+
+// #####################################
+
+.icon {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.header {
+    z-index: 1;
+  display: flex;
+  align-items: center;
+  padding-top: 50px + $navbar-height;
+  color: $primary;
+    background-image: url('../../../../../../public/geo-mac.jpg');
+  background-size: cover;
+  height: 100vh; /* ou ajuste conforme a altura desejada */
+  width: 100%;
+  position: relative;
+
+
+  
+  @media (max-width: 700px) {
+    text-align: center;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 700px) {
+      flex-direction: column-reverse;
+    }
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+  }
+
+  &__logo {
+    width: 200px;
+    margin-right: 32px;
+
+    @media (max-width: 700px) {
+      margin: 20px 0 0;
+    }
+    border-radius: 5px;
+  }
+
+  &__title__small,
+  &__link,
+  &__blurb {
+    color: rgba(white, 0.7);
+  }
+
+  &__title {
+    margin: 0 0 13px 36px;
+    font-weight: normal;
+    font-size: 36px;
+
+    &__small {
+      display: block;
+      font-size: 24px;
+    }
+
+    &__strong {
+      font-weight: bold;
+      color: white;
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    transition: 0.25s;
+
+    &:hover,
+    &:focus {
+      color: white;
+      text-decoration: none;
+    }
+
+    &:active {
+      color: rgba(white, 0.4);
+      transition: 0s;
+    }
+  }
+
+  &__blurb {
+    margin: 60px 24px 0;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  &__tiles {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: -62px;
+    background: #E4E4E4;
+    box-shadow: inset 0 0 0 1px white, 0 10px 30px rgba(black, 0.15);
+  }
+
+  &__tile {
+    flex: 1;
+
+    @media (max-width: 992px) {
+      flex-basis: 50%;
+    }
+
+    @media (max-width: 480px) {
+      flex-basis: 100%;
+    }
+
+    height: 100%;
+    position: relative;
+    padding: 40px 20px;
+    font-size: 20px;
+    white-space: nowrap;
+    color: #555;
+    border: 1px solid transparent;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: white;
+      transition: 0.3s;
+    }
+
+    > span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      position: relative;
+    }
+
+    &:hover,
+    &:focus {
+      color: inherit;
+      text-decoration: none;
+      outline: none;
+
+      > span {
+        z-index: 1;
+      }
+
+      .icon {
+        color: currentColor;
+      }
+
+      @media (min-width: 790px) {
+        &:hover::before,
+        &:focus::before {
+          z-index: 1;
+          transform: scale(1.15);
+          box-shadow: 0 20px 45px rgba(black, 0.2);
+        }
+
+        &:active::before {
+          transition: 0.1s;
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    .icon {
+      width: 42px;
+      height: 42px;
+      margin-right: 12px;
+      color: #ccc;
+      transition: 0.3s;
+    }
+  }
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade conforme necessário */
+  }
+
+  .header__top , .header__blurb{
+    position: relative; // ou absolute, dependendo do layout geral
+    z-index: 10; // Coloca o header à frente de outros elementos
+    // background-color: rgba(255, 255, 255, 0.8); // Exemplo de fundo semi-transparente, caso necessário
+    color: white; // Define a cor do texto para ter contraste,
+    margin-bottom: 20px;
+  }
+  
