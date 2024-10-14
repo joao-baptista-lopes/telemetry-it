@@ -6,6 +6,8 @@ import { ClientesBodyComponent } from './components/clientes-body/clientes-body.
 import { ClientesIntroComponent } from './components/clientes-intro/clientes-intro.component';
 import { ClientesBannerComponent } from './components/clientes-banner/clientes-banner.component';
 import { ClientesPageComponent } from './components/clientes-page/clientes-page.component';
+import { FooterComponent } from '../../main/components/footer/footer.component';
+import { HeaderComponent } from '../../main/components/header/header.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { ClientesPageComponent } from './components/clientes-page/clientes-page.
   ],
   imports: [
     CommonModule,
-    ClientesRoutingModule
+    ClientesRoutingModule,
+    HeaderComponent,
+    FooterComponent
   ]
 })
 export class ClientesModule { }

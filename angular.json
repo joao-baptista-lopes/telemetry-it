@@ -34,7 +34,9 @@
             "styles": [
               "src/styles.scss",
                "node_modules/aos/dist/aos.css",
-               "node_modules/bootstrap/dist/css/bootstrap.min.css"
+               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+                "node_modules/owl.carousel/dist/assets/owl.carousel.css",
+                  "node_modules/owl.carousel/dist/assets/owl.theme.default.css"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -100,7 +102,10 @@
             "styles": [
               "src/styles.scss",
                "node_modules/aos/dist/aos.css",
-               "node_modules/bootstrap/dist/css/bootstrap.min.css"
+               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+                 "node_modules/owl.carousel/dist/assets/owl.theme.default.css",
+                 "node_modules/owl.carousel/dist/assets/owl.carousel.css"
+
             ],
             "scripts": []
           }
