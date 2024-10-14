@@ -33,12 +33,15 @@
             ],
             "styles": [
               "src/styles.scss",
-               "node_modules/aos/dist/aos.css",
-               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-                "node_modules/owl.carousel/dist/assets/owl.carousel.css",
-                  "node_modules/owl.carousel/dist/assets/owl.theme.default.css"
+              "node_modules/aos/dist/aos.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/owl.carousel/dist/assets/owl.carousel.css",
+              "node_modules/owl.carousel/dist/assets/owl.theme.default.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/magnific-popup/dist/jquery.magnific-popup.min.js"
+
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -101,11 +104,10 @@
             ],
             "styles": [
               "src/styles.scss",
-               "node_modules/aos/dist/aos.css",
-               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-                 "node_modules/owl.carousel/dist/assets/owl.theme.default.css",
-                 "node_modules/owl.carousel/dist/assets/owl.carousel.css"
-
+              "node_modules/aos/dist/aos.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/owl.carousel/dist/assets/owl.theme.default.css",
+              "node_modules/owl.carousel/dist/assets/owl.carousel.css"
             ],
             "scripts": []
           }

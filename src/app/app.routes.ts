@@ -21,6 +21,10 @@ export const routes: Routes = [
     path: 'clientes',
     loadChildren: () => import('./modules/clientes/clientes.module').then(m => m.ClientesModule)
   },
+  {
+    path: 'videos',
+    loadChildren: () => import('./modules/video/video.module').then(m => m.VideoModule)
+  }
 
   //   {
   //     path:'',
