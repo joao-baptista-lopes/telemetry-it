@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-banner',
@@ -7,7 +7,18 @@ import { Component } from '@angular/core';
   templateUrl: './banner.component.html',
   styleUrl: './banner.component.scss'
 })
-export class BannerComponent {
+export class BannerComponent implements AfterViewInit {
+
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      const videoElement = document.querySelector('.background-video') as HTMLVideoElement;
+      if (videoElement) {
+        videoElement.load();
+        videoElement.play();
+      }
+    }, 100);
+  }
+  
 // Seleciona o botão de trigger do menu com tipagem correta
  triggerMenu = document.querySelector<HTMLElement>('.menu-trigger');
 
